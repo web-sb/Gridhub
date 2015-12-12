@@ -72,7 +72,6 @@
                 _page = page;
                 _widgets = _page.widgets;
                 _projectId = page.projectId;
-                console.log("11111" + page.projectId);
                 callback();
             }
         });
