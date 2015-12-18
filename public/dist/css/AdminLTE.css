@@ -206,7 +206,7 @@ a:focus {
 }
 .label {
     font-size: 12px;
-    border-radius: 0;
+    border-radius: 4;
     height: 20px;
 }
 
@@ -329,7 +329,7 @@ a:focus {
     line-height: 50px;
     text-align: center;
     width: 230px;
-    font-family: "Apple Braille", "Helvetica Neue", "Microsoft YaHei UI Light", Helvetica, Arial, sans-serif;
+    font-family: "Apple Braille", "Microsoft YaHei UI Light";
     padding: 0 15px;
     font-weight: 300;
     overflow: hidden;
@@ -1331,7 +1331,6 @@ a:focus {
 .input-group .input-group-addon {
     border-radius: 0;
     border-color: #d2d6de;
-    background-color: #fff;
 }
 
 /* button groups */
@@ -1369,6 +1368,9 @@ a:focus {
 .progress > .progress-bar {
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.progress {
+    margin: 12px 0 13px 0;
 }
 .progress,
 .progress > .progress-bar,
@@ -1586,13 +1588,24 @@ a:focus {
 
 .box {
     position: relative;
-    /*    border-radius: 3px;*/
+    border-radius: 3px;
     background: #ffffff;
-    border-top: 0 solid #f9f9f9;
-    /*    margin-bottom: 20px;*/
+    border-top: 3 solid #f9f9f9;
+    margin-bottom: 20px;
     width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
+
+/*
+.box {
+    position: relative;
+    background: #ffffff;
+    border-top: 0 solid #f9f9f9;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+*/
+
 .box.box-primary {
     border-top-color: #3c8dbc;
 }
@@ -4734,6 +4747,11 @@ table.text-center th {
 }
 .user-block.user-block-sm .username {
     font-size: 14px;
+}
+.demo img {
+    border-radius: 4px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 .img-sm,
 .img-md,
