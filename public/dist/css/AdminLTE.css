@@ -329,7 +329,7 @@ a:focus {
     line-height: 50px;
     text-align: center;
     width: 230px;
-    font-family: "Apple Braille", "Microsoft YaHei UI Light";
+    font-family: "Apple Braille", "Microsoft YaHei UI Light", Helvetica, Arial, sans-serif;
     padding: 0 15px;
     font-weight: 300;
     overflow: hidden;
@@ -1370,7 +1370,12 @@ a:focus {
     box-shadow: none;
 }
 .progress {
-    margin: 12px 0 13px 0;
+    margin: 2px 0 2px 0;
+    height: 30px;
+}
+.progress .progress-bar {
+    padding: 5px;
+    font-size: 14px;
 }
 .progress,
 .progress > .progress-bar,
@@ -1595,17 +1600,6 @@ a:focus {
     width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-
-/*
-.box {
-    position: relative;
-    background: #ffffff;
-    border-top: 0 solid #f9f9f9;
-    width: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-*/
-
 .box.box-primary {
     border-top-color: #3c8dbc;
 }
@@ -1736,6 +1730,13 @@ a:focus {
 }
 .box .box-group > .box {
     margin-bottom: 5px;
+}
+.box label {
+    font-size: 14px;
+    padding: 2px 2px 3px 4px;
+    width: 100%;
+    border-bottom: 1px solid #d2d6de;
+    margin: 2px 0 2px 0;
 }
 .box .knob-label {
     text-align: center;
@@ -2380,8 +2381,7 @@ a:focus {
     border-radius: 3px;
     position: relative;
     padding: 15px 5px;
-    margin: 0 0 10px 10px;
-    min-width: 80px;
+    width: 100%;
     height: 60px;
     text-align: center;
     color: #666;
@@ -4749,7 +4749,6 @@ table.text-center th {
     font-size: 14px;
 }
 .demo img {
-    border-radius: 4px;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }

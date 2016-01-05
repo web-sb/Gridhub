@@ -348,13 +348,6 @@ body.devpreview {
 .devpreview .row {
     margin-bottom: 5px;
 }
-
-/*
-.devpreview .demo .box .box {
-    border: none;
-}
-*/
-
 .sourcepreview .column,
 .sourcepreview .demo .row {
     margin: 0px 0px 0px 0;
